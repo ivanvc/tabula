@@ -9,7 +9,6 @@ rvm:
   - jruby-9.2.13.0
 jdk:
   - oraclejdk8
-  - openjdk7
 script: bundle exec jbundle install && bundle exec rake war && bundle exec rake jardist
 notifications:
   email: false
