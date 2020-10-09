@@ -2,9 +2,9 @@ sudo: false
 language: ruby
 dist: trusty
 before_install:
-  - gem update --system
-  - gem install bundler
-  - gem install jbundler
+  - gem update --system --no-rdoc --no-ri
+  - gem install bundler --no-rdoc --no-ri
+  - gem install jbundler --no-rdoc --no-ri
 rvm:
   - jruby-9.2.13.0
 jdk:
