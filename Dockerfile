@@ -6,12 +6,13 @@ RUN echo 'gem: --no-rdoc --no-ri' >> /.gemrc
 
 ENV GEM_HOME /usr/local/bundle
 ENV PATH $GEM_HOME/bin:$PATH
+ENV MAVEN_REPO https://repo1.maven.org/maven2
+# don't create ".bundle" in all our apps
+ENV BUNDLE_APP_CONFIG $GEM_HOME
+
 RUN gem install bundler -v '< 2' \
   && bundle config --global path "$GEM_HOME" \
   && bundle config --global bin "$GEM_HOME/bin"
-
-# don't create ".bundle" in all our apps
-ENV BUNDLE_APP_CONFIG $GEM_HOME
 
 WORKDIR /app
 EXPOSE 9292
