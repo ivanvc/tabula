@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    autoprefixer-rails (9.8.6.3)
+    autoprefixer-rails (10.0.1.0)
       execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -75,13 +75,13 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (>= 3.4.1)
-  compass
+  compass (= 1.0.3)
   cuba (~> 3.9.2)
   jar-dependencies (= 0.3.12)
   jbundler (~> 0.9.3)
   jruby-jars (= 9.2.0.0)
   rack (>= 2.0.6)
-  rake
+  rake (= 13.0.1)
   tilt (~> 2.0.8)
   warbler (~> 2.0.5)
 
