@@ -6,7 +6,7 @@ before_install:
   - gem install bundler
   - gem install jbundler
 rvm:
-  - jruby-9.1.9.0
+  - jruby-9.2.13.0
 jdk:
   - oraclejdk8
   - openjdk7

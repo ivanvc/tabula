@@ -1,4 +1,4 @@
-FROM jruby:9.2-jdk
+FROM jruby:9.2.13.0-jdk
 
 RUN apt-get update -qq && apt-get install -y build-essential \
   && apt-get clean && rm -rf /var/lib/apt/lists/*

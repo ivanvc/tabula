@@ -3,6 +3,9 @@
 #source "http://127.0.0.1:9292"
 
 source "https://rubygems.org"
+
+ruby "2.5.7", :engine => "jruby", :engine_version => "9.2.13.0"
+
 platform :jruby do
   gem "cuba", "~> 3.9.2"
   gem "rack", ">= 2.0.6"
